@@ -1,8 +1,8 @@
 # `@plandek-utils/graphql-utils`
 
 [![npm version](https://badge.fury.io/js/%40plandek-utils%2Fgraphql-utils.svg)](https://badge.fury.io/js/%40plandek-utils%2Fgraphql-utils)
-[![Maintainability](https://api.codeclimate.com/v1/badges/5a1cbad6e4912247a7f2/maintainability)](https://codeclimate.com/github/plandek-utils/graphql-utils/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/5a1cbad6e4912247a7f2/test_coverage)](https://codeclimate.com/github/plandek-utils/graphql-utils/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ea03a4a6781b14123d3e/maintainability)](https://codeclimate.com/github/plandek-utils/graphql-utils/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ea03a4a6781b14123d3e/test_coverage)](https://codeclimate.com/github/plandek-utils/graphql-utils/test_coverage)
 
 [TypeDoc generated docs in here](https://plandek-utils.github.io/graphql-utils)
 
