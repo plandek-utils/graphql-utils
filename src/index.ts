@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { loadTypedefsSync } from "@graphql-tools/load";
 

@@ -1,6 +1,7 @@
 {
   "name": "@plandek-utils/graphql-utils",
   "version": "1.0.0",
+  "type": "module",
   "author": "Eduardo Turiño <eturino@plandek.com>",
   "description": "Small set of utils for GraphQL",
   "main": "./dist/index.js",
@@ -17,10 +18,10 @@
     "commit": "git-cz",
     "build": "npm run build:tsup && npm run build:dts",
     "build:tsup": "tsup",
-    "build:dts": "echo 'emitting Declaration using tsc' && tsc --emitDeclarationOnly",
+    "build:dts": "tsc --emitDeclarationOnly",
     "fix": "npm run fix:biome && npm run fix:minify",
     "fix:biome": "biome check --write src",
-    "fix:minify": "echo 'Minifying fixtures.'; find . -regex './src/.*\\.fixtures\\.json$' -exec ./minify-json-file.sh {} \\;",
+    "fix:minify": "echo 'No minification needed'",
     "check": "npm run check:biome && npm run check:tsc",
     "check:biome": "biome check src",
     "check:tsc": "tsc --noEmit",
@@ -41,6 +42,7 @@
     "@types/node": "^20.11.5",
     "@vitest/coverage-v8": "^1.2.1",
     "graphql": "^16.5.0",
+    "husky": "^8.0.3",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vitest": "^1.2.1"

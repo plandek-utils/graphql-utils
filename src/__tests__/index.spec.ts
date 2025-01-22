@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 import { print } from "graphql";
 import { describe, expect, it } from "vitest";
 import { loadTypeDefs, makeLoadGQL } from "..";
