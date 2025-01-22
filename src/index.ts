@@ -1,6 +1,6 @@
+import { join } from "path";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { loadTypedefsSync } from "@graphql-tools/load";
-import { join } from "path";
 
 export function makeLoadGQL(dirname: string) {
   return function loadGQL(relativeFilePath: string) {
@@ -19,7 +19,9 @@ export function loadTypeDefs(filePath: string) {
   const doc = list[0].document;
 
   if (!doc) {
-    throw new Error(`no document detected in the source loaded on filePath ${JSON.stringify(list, null, 2)}`);
+    throw new Error(
+      `no document detected in the source loaded on filePath ${JSON.stringify(list, null, 2)}`
+    );
   }
 
   return doc;

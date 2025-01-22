@@ -1,5 +1,6 @@
-import { print } from "graphql";
 import { join } from "path";
+import { print } from "graphql";
+import { describe, expect, it } from "vitest";
 import { loadTypeDefs, makeLoadGQL } from "..";
 
 const expectedTest1 = `
