@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.1](https://github.com/plandek-utils/graphql-utils/compare/v1.1.0...v1.1.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* PLAN-17764: publish main as CommonJS again ([7f5cf5e](https://github.com/plandek-utils/graphql-utils/commit/7f5cf5ec51f28ae3eb08745ccdd3977c68415c8b))
+* PLAN-17764: publish main as CommonJS again ([cbbe93c](https://github.com/plandek-utils/graphql-utils/commit/cbbe93cd80420c287821e5a837c5c22fb3e1670d))
+
 ## [1.1.0](https://github.com/plandek-utils/graphql-utils/compare/v1.0.0...v1.1.0) (2026-11-16)
 
 
