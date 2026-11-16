@@ -1,5 +1,6 @@
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { print } from "graphql";
+import { parse, print } from "graphql";
 import { describe, expect, it } from "vitest";
 import { loadTypeDefs, makeLoadGQL } from "..";
 
@@ -18,6 +19,12 @@ describe("loadTypeDefs", () => {
 
   it("throws if there missing file", () => {
     expect(() => loadTypeDefs(join(__dirname, "./missing.graphql"))).toThrowError();
+  });
+
+  it("keeps descriptions and extensions as written", () => {
+    const fixture = join(__dirname, "./test-descriptions.graphql");
+    const typeDefs = loadTypeDefs(fixture);
+    expect(print(typeDefs)).toEqual(print(parse(readFileSync(fixture, "utf-8"))));
   });
 
   it("throws if there is no schema in the file", () => {

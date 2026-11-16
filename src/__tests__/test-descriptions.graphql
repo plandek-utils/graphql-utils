@@ -1,0 +1,13 @@
+"""
+A type with a block description.
+"""
+type Thing {
+  "a field with a string description"
+  id: ID!
+  ""
+  emptyDescription: String
+}
+
+extend type Query {
+  thing(id: ID!): Thing
+}
