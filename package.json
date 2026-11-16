@@ -1,7 +1,6 @@
 {
   "name": "@plandek-utils/graphql-utils",
   "version": "1.1.0",
-  "type": "module",
   "author": "Eduardo Turiño <eturino@plandek.com>",
   "description": "Small set of utils for GraphQL",
   "main": "./dist/index.js",
@@ -19,6 +18,7 @@
     "build": "npm run build:tsup && npm run build:dts",
     "build:tsup": "tsup",
     "build:dts": "tsc --emitDeclarationOnly",
+    "check:dist": "node --no-experimental-require-module -e \"const p=require('./package.json');const m=require(require('node:path').resolve(p.main));if(typeof m.loadTypeDefs!=='function')throw new Error('main ('+p.main+') does not export loadTypeDefs as CommonJS')\" && node --input-type=module -e \"import {readFileSync} from 'node:fs';import {resolve} from 'node:path';const p=JSON.parse(readFileSync('./package.json','utf8'));const m=await import(resolve(p.module));if(typeof m.loadTypeDefs!=='function')throw new Error('module ('+p.module+') does not export loadTypeDefs')\"",
     "fix": "npm run fix:biome && npm run fix:minify",
     "fix:biome": "biome check --write src",
     "fix:minify": "echo 'No minification needed'",
