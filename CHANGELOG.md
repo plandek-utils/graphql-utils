@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/plandek-utils/graphql-utils/compare/v1.0.0...v1.1.0) (2026-11-16)
+
+
+### Features
+
+* PLAN-17764: @graphql-tools/load 8 (utils 12.1.0) ([9c65101](https://github.com/plandek-utils/graphql-utils/commit/9c651013eb36e39e6eda89a50156568edb31dacb))
+* PLAN-17764: @graphql-tools/load 8 (utils 12.1.0) and trusted publishing ([83a3122](https://github.com/plandek-utils/graphql-utils/commit/83a3122468cceec4810e8dd762634931d7eccd9e))
+
 ## 1.0.0 (2022-07-06)
 
 
